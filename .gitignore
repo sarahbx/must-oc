@@ -12,3 +12,16 @@ vendor/*
 .claude/plans/*
 .local/*
 must-gather*
+.bash_profile
+.bashrc
+.idea
+HEAD
+refs
+objects
+hooks
+.zshrc
+.zprofile
+.vscode
+.ripgreprc
+.profile
+.mcp.json

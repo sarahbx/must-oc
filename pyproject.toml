@@ -1,0 +1,33 @@
+[project]
+name = "must-oc"
+version = "0.1.0"
+description = "oc-like CLI for must-gather directories"
+requires-python = ">=3.14"
+dependencies = ["pyyaml>=6.0,<7.0"]
+
+[project.scripts]
+must-oc = "must_oc.__main__:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers -v"
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.coverage.run]
+source = ["must_oc", "utilities"]
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
+
+[dependency-groups]
+dev = ["pytest>=8.0", "pytest-cov>=5.0", "mypy>=1.11"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

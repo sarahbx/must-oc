@@ -1,0 +1,15 @@
+# cluster_scoped.yaml
+# Resource types found under cluster-scoped-resources/ rather than namespaces/.
+# Updated by: must-oc update-types -d <must-gather-dir>
+# Manual edits are safe -- update-types only adds, never removes.
+
+- nodes
+- persistentvolumes
+- clusterroles
+- clusterrolebindings
+- namespaces
+- securitycontextconstraints
+- volumesnapshotcontents
+- volumesnapshotclasses
+- storageclasses
+- customresourcedefinitions

@@ -1,0 +1,173 @@
+# resource_map.yaml
+# Maps resource plural names to API groups and user-facing aliases.
+# Updated by: must-oc update-types -d <must-gather-dir>
+# Manual edits are safe -- update-types only adds, never removes.
+
+pods:
+  api_group: core
+  aliases:
+    - pod
+    - po
+
+services:
+  api_group: core
+  aliases:
+    - service
+    - svc
+
+configmaps:
+  api_group: core
+  aliases:
+    - configmap
+    - cm
+
+secrets:
+  api_group: core
+  aliases:
+    - secret
+
+serviceaccounts:
+  api_group: core
+  aliases:
+    - serviceaccount
+    - sa
+
+persistentvolumeclaims:
+  api_group: core
+  aliases:
+    - persistentvolumeclaim
+    - pvc
+
+events:
+  api_group: core
+  aliases:
+    - event
+    - ev
+
+nodes:
+  api_group: core
+  aliases:
+    - node
+    - "no"
+
+namespaces:
+  api_group: core
+  aliases:
+    - namespace
+    - ns
+
+persistentvolumes:
+  api_group: core
+  aliases:
+    - persistentvolume
+    - pv
+
+replicationcontrollers:
+  api_group: core
+  aliases:
+    - replicationcontroller
+    - rc
+
+endpoints:
+  api_group: core
+  aliases:
+    - ep
+
+deployments:
+  api_group: apps
+  aliases:
+    - deployment
+    - deploy
+
+replicasets:
+  api_group: apps
+  aliases:
+    - replicaset
+    - rs
+
+statefulsets:
+  api_group: apps
+  aliases:
+    - statefulset
+    - sts
+
+daemonsets:
+  api_group: apps
+  aliases:
+    - daemonset
+    - ds
+
+jobs:
+  api_group: batch
+  aliases:
+    - job
+
+cronjobs:
+  api_group: batch
+  aliases:
+    - cronjob
+    - cj
+
+ingresses:
+  api_group: networking.k8s.io
+  aliases:
+    - ingress
+    - ing
+
+networkpolicies:
+  api_group: networking.k8s.io
+  aliases:
+    - networkpolicy
+    - netpol
+
+roles:
+  api_group: rbac.authorization.k8s.io
+  aliases:
+    - role
+
+rolebindings:
+  api_group: rbac.authorization.k8s.io
+  aliases:
+    - rolebinding
+
+clusterroles:
+  api_group: rbac.authorization.k8s.io
+  aliases:
+    - clusterrole
+
+clusterrolebindings:
+  api_group: rbac.authorization.k8s.io
+  aliases:
+    - clusterrolebinding
+
+routes:
+  api_group: route.openshift.io
+  aliases:
+    - route
+
+horizontalpodautoscalers:
+  api_group: autoscaling
+  aliases:
+    - horizontalpodautoscaler
+    - hpa
+
+poddisruptionbudgets:
+  api_group: policy
+  aliases:
+    - poddisruptionbudget
+    - pdb
+
+endpointslices:
+  api_group: discovery.k8s.io
+  aliases:
+    - endpointslice
+
+servicemonitors:
+  api_group: monitoring.coreos.com
+  aliases:
+    - servicemonitor
+
+prometheusrules:
+  api_group: monitoring.coreos.com
+  aliases:
+    - prometheusrule

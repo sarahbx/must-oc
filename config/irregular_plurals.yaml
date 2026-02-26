@@ -1,0 +1,20 @@
+# config/irregular_plurals.yaml
+# Maps plural resource names to their Kubernetes Kind when the Kind
+# cannot be derived by simply stripping a trailing 's' and capitalizing.
+# Manual edits are safe.
+
+endpoints: Endpoints
+ingresses: Ingress
+networkpolicies: NetworkPolicy
+poddisruptionbudgets: PodDisruptionBudget
+policies: Policy
+statuses: Status
+securitycontextconstraints: SecurityContextConstraints
+customresourcedefinitions: CustomResourceDefinition
+volumesnapshotcontents: VolumeSnapshotContent
+volumesnapshotclasses: VolumeSnapshotClass
+storageclasses: StorageClass
+endpointslices: EndpointSlice
+prometheusrules: PrometheusRule
+servicemonitors: ServiceMonitor
+horizontalpodautoscalers: HorizontalPodAutoscaler
