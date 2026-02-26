@@ -11,5 +11,12 @@ has_python = re.search(r"(?<![a-z])(?:python3?|pytest)\s", cmd)
 starts_with_uv = cmd.startswith("uv run")
 
 if has_python and not starts_with_uv:
-    print(json.dumps({"result": "BLOCKED: Python commands must use 'uv run'. Change to: uv run " + cmd}))
+    print(
+        json.dumps(
+            {
+                "result": "BLOCKED: Python commands must use 'uv run'. Change to: uv run "
+                + cmd
+            }
+        )
+    )
     sys.exit(2)
